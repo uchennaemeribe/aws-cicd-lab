@@ -1,0 +1,10 @@
+digraph G {
+  rankdir=TB;
+
+  Developer -> "GitHub Repo";
+  "GitHub Repo" -> "GitHub Actions";
+  "GitHub Actions" -> "AWS EC2";
+  "AWS EC2" -> "Node App (PM2)";
+  "Node App (PM2)" -> "Nginx";
+  "Nginx" -> "User Browser";
+}
